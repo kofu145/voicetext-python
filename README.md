@@ -20,6 +20,7 @@ When you're playing sound directly:
 from voicetext import *
 from io import BytesIO
 
+audio = "こんにちは"
 my_file = BytesIO()
 tts = voice_text(API_KEY="YOUR_API_KEY", text=audio)
 tts.write_tts_to(my_file)
@@ -28,7 +29,8 @@ tts.write_tts_to(my_file)
 When you're creating a file and playing sound from it:
 ```
 from voicetext import *
-def speak(audio):
+
+audio = "こんにちは"
 tts = voice_text(API_KEY="YOUR_API_KEY", text=audio)
 tts.get_tts_file("audio.wav")
 # Now there will be an "audio.wav" file in the working directory, use a library to play it
