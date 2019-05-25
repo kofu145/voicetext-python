@@ -11,8 +11,8 @@ tts = voicetext(API_KEY="MY_API_KEY", text="こんにちは")
 ```
 
 Then, you can call two methods:
-get_tts_file creates a WAV file (will be different if you specified a file_format) 
-write_tts_to writes to a specified file
+```get_tts_file``` creates a WAV file (will be different if you specified a file_format) 
+```write_tts_to``` writes to a specified file
 
 ## Examples:
 When you're playing sound directly:
